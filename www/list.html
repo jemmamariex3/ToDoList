@@ -1,0 +1,29 @@
+<ons-page id="list">
+        
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button id="splitter-toggle">
+                <ons-icon icon="fa-bars"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">To-Do</div>
+        <div class ="right">
+            <ons-toolbar-button id="add">
+                <ons-icon icon="fa-plus"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    
+    <ons-list id="todo-list"></ons-list> 
+    <script id="todo-list-item" type="text/template">
+        <ons-list-item>
+            <label class="left">
+                <ons-input type="checkbox" {{checked}}></ons-input>
+            </label>
+            <div class="label">{{label}}</div>
+            <div class="right">
+                <ons-icon style="" icon="fa-trash-o"></ons-icon>
+            </div>            
+        </ons-list-item>
+    </script>
+</ons-page>
